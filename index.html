@@ -1,1 +1,370 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Academy - Apprendre le HTML</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101323;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #191e35;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #7257e8;
+}
+
+header h1 {
+    color: #a995ff;
+    font-size: 36px;
+}
+
+nav {
+    background: #202642;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a995ff;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+section {
+    background: #1b2139;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #343d60;
+}
+
+h2 {
+    color: #a995ff;
+    border-bottom: 2px solid #7257e8;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #83aaff;
+}
+
+code {
+    color: #9ef0c1;
+}
+
+pre {
+    background: #090d19;
+    padding: 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border-left: 4px solid #7257e8;
+}
+
+button {
+    background: #7257e8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #927cf5;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    background: #090d19;
+    color: #9ef0c1;
+    border: 1px solid #7257e8;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+footer {
+    background: #191e35;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML ACADEMY</h1>
+    <p>Apprends à créer ton propre site Internet !</p>
+</header>
+
+<nav>
+    <a href="#debut">Débuter</a>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#exercice">Pratiquer</a>
+</nav>
+
+<main>
+
+<section id="debut">
+    <h2>Bienvenue sur HTML Academy !</h2>
+
+    <p>
+        Tu souhaites apprendre à créer des sites Internet ?
+        Tu es au bon endroit !
+    </p>
+
+    <p>
+        Dans cette formation, tu vas apprendre trois langages
+        essentiels :
+    </p>
+
+    <ul>
+        <li><strong>HTML :</strong> construire le contenu d'un site.</li>
+        <li><strong>CSS :</strong> personnaliser son apparence.</li>
+        <li><strong>JavaScript :</strong> ajouter des interactions.</li>
+    </ul>
+</section>
+
+<section id="html">
+    <h2>1. Apprendre le HTML</h2>
+
+    <p>
+        Le HTML est le langage qui permet de construire
+        la structure d'une page Internet.
+    </p>
+
+    <h3>La structure de base</h3>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Mon premier site&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Bonjour !&lt;/h1&gt;
+
+    &lt;p&gt;Bienvenue sur mon site.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>Les principales balises HTML</h3>
+
+    <ul>
+        <li><code>&lt;h1&gt;</code> : titre principal.</li>
+        <li><code>&lt;h2&gt;</code> : sous-titre.</li>
+        <li><code>&lt;p&gt;</code> : paragraphe.</li>
+        <li><code>&lt;img&gt;</code> : image.</li>
+        <li><code>&lt;a&gt;</code> : lien.</li>
+        <li><code>&lt;ul&gt;</code> : liste.</li>
+        <li><code>&lt;li&gt;</code> : élément d'une liste.</li>
+        <li><code>&lt;button&gt;</code> : bouton.</li>
+        <li><code>&lt;br&gt;</code> : saut de ligne.</li>
+    </ul>
+
+    <h3>Ajouter une image</h3>
+
+    <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+
+    <h3>Créer un lien</h3>
+
+    <pre><code>&lt;a href="https://www.google.com"&gt;
+    Visiter Google
+&lt;/a&gt;</code></pre>
+</section>
+
+<section id="css">
+    <h2>2. Apprendre le CSS</h2>
+
+    <p>
+        Le CSS permet de modifier l'apparence de ton site :
+        couleurs, tailles, positions, arrière-plans...
+    </p>
+
+    <h3>Changer la couleur du texte</h3>
+
+    <pre><code>&lt;style&gt;
+p {
+    color: red;
+}
+&lt;/style&gt;</code></pre>
+
+    <h3>Changer la couleur de fond</h3>
+
+    <pre><code>body {
+    background-color: black;
+}</code></pre>
+
+    <h3>Centrer un texte</h3>
+
+    <pre><code>h1 {
+    text-align: center;
+}</code></pre>
+
+    <h3>Modifier la taille d'un texte</h3>
+
+    <pre><code>p {
+    font-size: 20px;
+}</code></pre>
+
+    <h3>Créer un bouton personnalisé</h3>
+
+    <pre><code>button {
+    background: purple;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}</code></pre>
+</section>
+
+<section id="javascript">
+    <h2>3. Apprendre JavaScript</h2>
+
+    <p>
+        JavaScript permet de rendre ton site interactif.
+        Tu peux créer des boutons, des jeux, des menus et bien plus !
+    </p>
+
+    <h3>Afficher un message</h3>
+
+    <pre><code>alert("Bienvenue sur mon site !");</code></pre>
+
+    <h3>Créer un bouton interactif</h3>
+
+    <pre><code>&lt;button onclick="direBonjour()"&gt;
+    Clique ici
+&lt;/button&gt;
+
+&lt;script&gt;
+function direBonjour() {
+    alert("Bonjour !");
+}
+&lt;/script&gt;</code></pre>
+
+    <h3>Changer un texte</h3>
+
+    <pre><code>&lt;p id="message"&gt;Ancien texte&lt;/p&gt;
+
+&lt;button onclick="changer()"&gt;
+    Modifier
+&lt;/button&gt;
+
+&lt;script&gt;
+function changer() {
+    document.getElementById("message")
+    .textContent = "Nouveau texte !";
+}
+&lt;/script&gt;</code></pre>
+</section>
+
+<section id="exercice">
+    <h2>4. Ton premier exercice pratique</h2>
+
+    <p>
+        Écris ton propre code HTML dans la zone ci-dessous.
+        Clique sur « Afficher le résultat » pour voir ton site !
+    </p>
+
+    <textarea id="code">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;title&gt;Mon site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Mon premier site !&lt;/h1&gt;
+
+    &lt;p&gt;Je suis en train d'apprendre le HTML.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+
+    <br><br>
+
+    <button onclick="afficher()">Afficher le résultat</button>
+
+    <h3>Résultat :</h3>
+
+    <iframe id="resultat" title="Aperçu du code HTML"></iframe>
+</section>
+
+<section>
+    <h2>5. Conseils pour progresser</h2>
+
+    <ol>
+        <li>Apprends les balises HTML.</li>
+        <li>Entraîne-toi à utiliser le CSS.</li>
+        <li>Découvre JavaScript.</li>
+        <li>Crée des petits projets.</li>
+        <li>Essaie de construire ton propre site.</li>
+    </ol>
+
+    <p>
+        Le meilleur moyen d'apprendre à coder est de pratiquer !
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>HTML Academy - Apprends à coder de zéro.</p>
+    <p>Formation gratuite en HTML, CSS et JavaScript.</p>
+</footer>
+
+<script>
+function afficher() {
+    const code = document.getElementById("code").value;
+    document.getElementById("resultat").srcdoc = code;
+}
+
+afficher();
+</script>
+
+</body>
+</html>
+
